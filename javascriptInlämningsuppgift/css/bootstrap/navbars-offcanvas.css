@@ -1,0 +1,39 @@
+body {
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.fs-5{
+  font-family: "Roboto";
+  color: #00c991;
+}
+.linkColor{
+  color:#c90038;
+}
+.display-5, .pb-2, .fs-4, .mb-3, .me-2, .col-sm-6{
+  font-family: "Nunito";
+  color: #00c991 !important;
+}
+.col-md-10, .col-md-2, .col-md-12{
+  color: blueviolet;
+}
+.col-md-10, a, .nav-link, .mb-2{
+  font-family: "Hack";
+  color: blueviolet;
+}
+.md-10{
+  background-color: #c90038;
+}
+.copyrightText{
+  font-family: "Nunito";
+  color: #00c991 !important;
+}
+
+
+.bg-body-tertiary{
+  background-color: black;
+}
+

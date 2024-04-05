@@ -1,0 +1,128 @@
+<!doctype html>
+  <html lang="en" data-bs-theme="auto">
+    <!-- Part of page Frame -->
+    <!-- html-head with all resources -->
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Barbone template</title>
+    
+      <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+      <link rel="manifest" href="./favicon_io/site.webmanifest">
+  
+      <!-- Bootstrap styles from their respective templates -->
+      <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+      <link href="./css/bootstrap/navbars-offcanvas.css" rel="stylesheet">
+      <link href="./css/bootstrap/features.css" rel="stylesheet">
+      <link href="./css/bootstrap/grid.css" rel="stylesheet">
+      <link href="./css/bootstrap/sign-in.css" rel="stylesheet">
+      <link href="./css/bootstrap/modals.css" rel="stylesheet">
+    </head>
+
+    <!-- Part of page Frame -->
+    <!-- Header and Menu -->
+    <body>
+
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-4">Music App</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="./barbone.html" class="nav-link" id="homeButton">Home</a></li>
+                <li class="nav-item"><a href="./barbone_p1.html?page=0" class="nav-link">Bands</a></li>
+            </ul>
+        </header>
+      </div>
+
+      <main>
+
+        <!-- Individual pages -->
+        <!-- Page Welcome -->
+        <div class="container px-4 py-4" id = 'view-page'>
+          <h2 class="pb-2 border-bottom">List of Music bands</h2>
+  
+          <div class="row mb-1 text-center">
+            <div class="col-md-8 ">
+              <form class="d-flex mt-3 mt-lg-0" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput" data-search>
+                <button class="btn btn-outline-success" type="submit" id="btnSearch">Search</button>
+              </form>
+              <p id="resultsCount" class="col-sm-6">Database contains ${promise.dbItemsCount} music groups matching the search criteria</p>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
+            <div class="col-md-7 col-lg-10">
+                <div class="row mb-2 text-center">
+                  <div class="col-md-10 themed-grid-head-col">Group Name</div>
+                </div>
+                <div class="row mb-2 text-center" id="list-of-items">
+                  <div class="col-md-10 themed-grid-col link-color">
+                      <a>
+                        AC/DC
+                      </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <nav aria-label="Standard pagination example">
+            <ul class="pagination">
+            <li class="page-item">
+                <button id="btnPrev" class="page-link" href="#list-of-friends" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                </button>
+            </li>
+            <div>
+              
+            </div>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=0" data-id="0">1</a></li>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=1" data-id="1">2</a></li>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=2" data-id="2">3</a></li>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=3" data-id="3">4</a></li>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=4" data-id="4">5</a></li>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=5" data-id="5">6</a></li>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=6" data-id="6">7</a></li>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=7" data-id="7">8</a></li>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=8" data-id="8">9</a></li>
+            <li class="page-item"><a class="page-link" href="./barbone_p1.html?page=9" data-id="9">10</a></li>
+            <li class="page-item">
+                <button id="btnNext" class="page-link" href="#list-of-friends" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                </button>
+            </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      </main>
+
+
+      <!-- Part of page Frame -->
+      <!-- Footer with copyright notice -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="./index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <div>
+                    <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Music App</span>
+                  </div>
+                </a>
+            </div>
+        </footer>
+      </div>
+      
+      <!-- Part of page Frame -->
+      <!-- Bootstrap Javascript -->
+      <script src="./script/bootstrap/bootstrap.bundle.min.js"></script>
+
+      <!-- Scripts -->
+      <script src="./script/seido/modals.js"></script>
+      <script src="./script/seido/select-list-items.js"></script>
+      <script type="module" src="./script/magic.js"></script>
+      <script type="module" src="./script/musicService.js"></script>
+    </body>
+</html>

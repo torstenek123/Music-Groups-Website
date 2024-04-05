@@ -1,0 +1,44 @@
+.themed-grid-head-col {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(131, 255, 221, 0.8);
+  border:1px solid rgba(0, 201, 145, 1);
+    /* background-color: rgba(112.520718, 44.062154, 249.437846, .35);
+    border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3) */
+}
+
+.themed-grid-col {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  /* background-color: rgba(0, 201, 44, 1); */
+  /* background-color: rgba(181, 255, 234, .5);
+  border:1px solid rgba(0, 201, 145, 1); */
+  border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3); 
+  background-color: rgba(112.520718, 44.062154, 249.437846, .15);
+  /*
+  rgba(0, 201, 44, 1)
+  */
+
+.col-md-2.themed-grid-col, .col-md-10.themed-grid-col{
+  width: auto;
+} 
+
+  /*
+    background-color: rgba(181, 255, 234, .5);
+    
+     grid-col
+    border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3); 
+    background-color: rgba(112.520718, 44.062154, 249.437846, .15);
+
+     head-col
+    background-color: rgba(112.520718, 44.062154, 249.437846, .35);
+    border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3)
+  */
+}
+
+.themed-container {
+  padding: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(112.520718, 44.062154, 249.437846, .15);
+  border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3);
+}
