@@ -2,4 +2,4 @@ Open workspace file
 Go live (need to have live server extension)
 Open magic.js or musicService.js in visual studio code
 Run and debug in Barbone option
-Explore the different pages
+Explore the different pages in light or darkmode!
